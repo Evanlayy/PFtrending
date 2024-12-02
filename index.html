@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pump Fun Trending</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/pflogo.png" alt="PF Logo" class="header-logo">
+            <h1>Pump Fun Trending</h1>
+            <div class="header-buttons">
+                <a href="https://pump.fun/board" class="btn btn-buy" target="_blank">Buy Now</a>
+                <a href="https://x.com/pftrending" class="btn btn-social" target="_blank">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/>
+                    </svg>
+                </a>
+                <a href="https://t.me/pf_trending" class="btn btn-social" target="_blank">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.9-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.008-1.252-.241-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.228.166.336.032.272-.012 1.216-.065 1.46z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="market-overview">
+            <h2>Market Overview</h2>
+            <div class="trend-indicator">
+                <span id="trend-status">Loading...</span>
+                <div id="trend-direction" class="neutral"></div>
+            </div>
+        </section>
+
+        <section id="metrics">
+            <div class="metric-card">
+                <h3>24h Volume</h3>
+                <p id="volume-24h">Loading...</p>
+            </div>
+            <div class="metric-card">
+                <h3>Total Coins</h3>
+                <p id="total-coins">Loading...</p>
+            </div>
+            <div class="metric-card">
+                <h3>Successful Coins</h3>
+                <p id="successful-coins">Loading...</p>
+            </div>
+            <div class="metric-card">
+                <h3>Success Rate</h3>
+                <p id="success-rate">Loading...</p>
+            </div>
+            <div class="metric-card">
+                <h3>Market Sentiment</h3>
+                <p id="market-sentiment">Loading...</p>
+            </div>
+        </section>
+
+        <section id="success-rate-chart">
+            <h2>Past Week's Success Rate</h2>
+            <div class="chart-container">
+                <canvas id="weeklyChart"></canvas>
+            </div>
+        </section>
+
+        <section id="top-performers">
+            <h2>Top Performing Coins</h2>
+            <div id="coins-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pump Fun Trending | Market data updates every 5 minutes</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
